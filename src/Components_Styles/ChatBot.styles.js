@@ -81,7 +81,7 @@ export const ChatBotMessage = styled.div`
   border-radius: 15px 15px 0 15px;
   color: #fff;
   margin-bottom: 8px;
-  max-width: 50%;
+  max-width: 85%;
   padding: 8px 16px;
   align-self: flex-start;
 `;
@@ -91,7 +91,7 @@ export const UserMessage = styled.div`
   border-radius: 15px 15px 15px 0;
   color: #fff;
   margin-bottom: 8px;
-  max-width: 50%;
+  max-width: 85%;
   padding: 8px 16px;
   align-self: flex-end;
 `;
