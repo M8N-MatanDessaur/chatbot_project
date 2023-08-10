@@ -30,7 +30,7 @@ export default function ChatBot({ name = "AI Chatbot", userColor = "#000", botCo
             const element = chatBodyRef.current;
             element.scrollTop = element.scrollHeight;
         }
-    }, [chatBodyRef]);
+    }, [chatBodyRef, messages, messages.length]);
 
     async function handleSendMessage() {
         // Don't send empty messages
