@@ -3,6 +3,6 @@ import ChatBot from './Components/ChatBot.component';
 
 export default function App() {
   return (
-    <ChatBot/>
+    <ChatBot name="webcity AI Chatbot"/>
   );
 }
