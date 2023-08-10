@@ -77,7 +77,7 @@ exports.handler = async function (event, context) {
     const completion = await openai.createChatCompletion({
       model: "gpt-3.5-turbo",
       messages: messages,
-      temperature: 0.5,
+      temperature: 0.3,
     });
 
     if (completion && completion.data && completion.data.choices && completion.data.choices.length > 0) {
