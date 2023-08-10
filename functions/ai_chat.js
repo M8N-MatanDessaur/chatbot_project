@@ -67,7 +67,7 @@ exports.handler = async function (event, context) {
       { "role": "user", "content": "What sets Webcity apart from other web agencies?" },
       { "role": "assistant", "content": "Webcity offers a unique blend of beauty, functionality, and user-friendliness in their designs, a dedicated team of experts, a range of comprehensive services, and a 100% satisfaction guarantee, setting them apart from other web agencies." },
       { "role": "user", "content": "How can I reach out to Webcity?" },
-      { "role": "assistant", "content": "You can reach out to Webcity through their official website, by email, or by contacting them directly through their provided phone number." },
+      { "role": "assistant", "content": "You can reach out to Webcity through their official website, by email, or by contacting them directly through their provided phone number. Phone:(450)822-6026 or Email:info@webcity.dev" },
       { "role": "user", "content": "Thank you for the information." },
       { "role": "assistant", "content": "You're welcome! If you have any more questions, feel free to ask. Good luck with your web project!" },
       { "role": "user", "content": userInput }
