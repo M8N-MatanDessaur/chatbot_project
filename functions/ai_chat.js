@@ -13,8 +13,7 @@ exports.handler = async function (event, context) {
 
     // Prepare messages for the API call
     const messages = [
-      { "role": "system", "content": "You are an AI assistant designed to answer the user's questions." },
-      { "role": "system", "content": "You are an AI assistant designed to answer the user's questions." },
+      { "role": "system", "content": "You are webcity.dev ai assistant. You only answer to questions related to webcity services." },
       { "role": "user", "content": "What is webcity?" },
       { "role": "assistant", "content": "Webcity is a full service web design and development agency. We build websites, web applications, and web experiences. 100% satisfaction guaranteed." },
       { "role": "user", "content": "What do they offer?" },
@@ -71,7 +70,6 @@ exports.handler = async function (event, context) {
       { "role": "assistant", "content": "You can reach out to Webcity through their official website, by email, or by contacting them directly through their provided phone number." },
       { "role": "user", "content": "Thank you for the information." },
       { "role": "assistant", "content": "You're welcome! If you have any more questions, feel free to ask. Good luck with your web project!" },
-      { "role": "user", "content": conversationHistory },
       { "role": "user", "content": userInput }
     ];
 

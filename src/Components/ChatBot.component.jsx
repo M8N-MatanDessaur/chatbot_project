@@ -19,8 +19,7 @@ import {
 export default function ChatBot({ name = "AI Chatbot", userColor = "#000", botColor = "#2274A5" }) {
     const chatBodyRef = useRef(null);
     const [messages, setMessages] = useState([
-        { role: 'bot', content: 'Hello there I am your AI assistant' },
-        { role: 'user', content: 'Hey 👋🏼' }
+        { role: 'bot', content: 'Hello there I am your AI assistant 👋🏼' },
     ]);
     const [userInput, setUserInput] = useState('');
 
@@ -41,7 +40,7 @@ export default function ChatBot({ name = "AI Chatbot", userColor = "#000", botCo
 
         // Call Netlify function
         try {
-            const response = await fetch(`.netlify/functions/ai_chat?input=${encodeURIComponent(userInput)}&history=${encodeURIComponent(messages.map(m => m.content).join(' '))}`);
+            const response = await fetch(`.netlify/functions/ai_chat?input=${encodeURIComponent(userInput)}`);
             const data = await response.json();
 
             // Add bot's response to local state
