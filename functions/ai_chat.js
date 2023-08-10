@@ -19,7 +19,7 @@ exports.handler = async function(event, context) {
     ];
 
     // Call OpenAI's createChatCompletion
-    const completion = await openai.createChatCompletion({
+    const completion = await openai.createCompletion({
       model: "davinci:ft-m8n-2023-08-10-14-28-24",
       messages: messages,
       temperature: 0.5,
